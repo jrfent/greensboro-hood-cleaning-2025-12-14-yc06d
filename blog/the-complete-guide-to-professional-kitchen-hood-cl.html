@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Hood Cleaning Team You Can Trust - Licensed Professionals, Eco-Friendly, Quick Service in Greensboro">
+    <meta name="keywords" content="hood cleaning, kitchen cleaning, fire prevention, professional cleaning">
+    <meta name="author" content="Greensboro Hood Cleaning">
+    <meta name="robots" content="index, follow">
+    <title>Greensboro Hood Cleaning - Professional Kitchen Hood Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #5B4BFF;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease-out;
+            border-radius: 8px;
+            padding: 32px;
+            background-color: white;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-item {
+            transition: all 300ms ease-out;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-4px);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 24px 0;
+        }
+        
+        .faq-item:first-child {
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            user-select: none;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+        
+        .faq-answer {
+            margin-top: 16px;
+            color: #666;
+            line-height: 1.6;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .section-heading {
+            color: #5B4BFF;
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .section-heading {
+                font-size: 2.25rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        .hero-heading {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-heading {
+                font-size: 3.75rem;
+            }
+        }
+        
+        .hero-subheading {
+            color: #666;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-subheading {
+                font-size: 1.25rem;
+            }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .accent-color {
+            color: #00E5A8;
+        }
+        
+        .bg-light-lavender {
+            background-color: #EEF0FF;
+        }
+        
+        .text-dark {
+            color: #1a1a1a;
+        }
+        
+        .text-muted {
+            color: #666;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.1) 100%);
+        }
+        
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: #EEF0FF;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .icon-box svg {
+            width: 24px;
+            height: 24px;
+            color: #5B4BFF;
+            stroke-width: 1.5;
+        }
+        
+        .star-rating {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">GH</span>
+                    </div>
+                    <span class="hidden sm:inline font-bold text-lg text-dark">Greensboro Hood Cleaning</span>
+                </a>
+                <a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d/blog.html" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Blog Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+        <article class="prose prose-lg max-w-none">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">The Complete Guide to Professional Kitchen Hood Cleaning: Why It Matters for Your Restaurant</h1>
+            
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=675&fit=crop&q=80" alt="Professional kitchen hood cleaning service removing grease buildup from commercial kitchen ventilation system" class="w-full rounded-lg shadow-lg mb-8">
+            
+            <p class="mb-4 leading-relaxed text-gray-700">When you own or manage a restaurant, the daily challenges of running a successful food service business can feel overwhelming. Between managing staff, maintaining food quality, and ensuring customer satisfaction, it's easy to overlook one of the most critical aspects of kitchen maintenance: professional hood cleaning. Yet, this essential service isn't just about keeping your kitchen looking clean—it's about protecting your business, your employees, and your customers from serious safety hazards. In this comprehensive guide, we'll explore everything you need to know about professional kitchen hood cleaning and why it should be a top priority for any food service establishment.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Kitchen hood cleaning is far more than a cosmetic service. It's a critical safety measure that directly impacts fire prevention, air quality, equipment longevity, and regulatory compliance. Understanding the importance of regular professional cleaning and how it works can help you make informed decisions that protect your investment and keep your operation running smoothly.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Understanding Your Kitchen Hood System</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">A commercial kitchen hood system is a complex piece of equipment designed to remove heat, steam, smoke, and cooking odors from your kitchen. The system typically consists of several interconnected components that work together to maintain proper ventilation and air quality. Understanding how these components function is essential for appreciating why regular professional cleaning is so critical.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Components of a Complete Hood System</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Your kitchen hood system includes the hood canopy itself, which is positioned directly above your cooking equipment and serves as the first line of defense in capturing cooking vapors and grease particles. Below the canopy, filters work to trap larger particles and grease droplets before they enter the ductwork. The ductwork carries the contaminated air through your building's ventilation system, while the exhaust fan provides the necessary suction to move air through the entire system. Finally, the damper regulates airflow and prevents backdrafts that could allow contaminated air to re-enter your kitchen.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Each of these components plays a vital role in maintaining proper kitchen ventilation. When any part of this system becomes clogged with grease and buildup, the entire system's efficiency decreases dramatically, creating serious safety and operational concerns.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">The Fire Safety Crisis: Why Grease Buildup Is Dangerous</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Perhaps the most critical reason for regular professional hood cleaning is fire prevention. Grease accumulation in your hood system represents one of the leading causes of restaurant fires, according to the National Fire Protection Association. When grease builds up on hood surfaces, filters, and ductwork, it creates a highly flammable environment that can ignite from even a small spark or high heat source.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">How Grease Fires Develop and Spread</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Grease fires in commercial kitchens are particularly dangerous because they spread rapidly through the hood system and ductwork. A small fire that starts at the cooking line can quickly spread through the entire ventilation system, potentially affecting multiple areas of your restaurant or even spreading to adjacent buildings. The intense heat from grease fires can damage your hood equipment, ductwork, and building structure, resulting in thousands of dollars in repairs and potential business interruption.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Professional hood cleaning removes the accumulated grease that fuels these fires, dramatically reducing your fire risk. Regular cleaning ensures that your hood system remains free of the flammable deposits that create dangerous conditions. This is not just about protecting property—it's about protecting lives. Kitchen staff and customers could be seriously injured or killed in a hood fire, making this a critical safety concern that no restaurant owner can afford to ignore.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Insurance companies recognize the importance of regular hood cleaning for fire prevention. Many insurance policies require proof of professional hood cleaning at regular intervals as a condition of coverage. Failure to maintain proper cleaning schedules could result in your insurance claim being denied if a fire occurs, leaving you personally liable for all damages and injuries.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Health, Safety, and Air Quality Benefits</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Beyond fire safety, professional hood cleaning directly impacts the health and safety of your kitchen staff and customers. A properly maintained hood system ensures adequate ventilation, removing harmful airborne contaminants and improving indoor air quality. When your hood system is clogged with grease and buildup, it cannot effectively remove cooking fumes, which can accumulate to dangerous levels in your kitchen.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Protecting Your Staff's Health</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Your kitchen staff spends hours each day working in a hot, demanding environment. Poor ventilation from a neglected hood system exposes them to excessive heat, smoke, grease particles, and cooking fumes that can cause respiratory problems, eye irritation, and other health issues. Chronic exposure to these conditions can lead to long-term health problems and increased employee turnover as staff members seek healthier work environments.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Professional hood cleaning improves working conditions by ensuring proper ventilation and air quality. Your staff will work in a cleaner, healthier environment with better air circulation and temperature control. This investment in employee health can lead to improved morale, reduced sick days, and better retention of experienced kitchen staff—all of which directly impact your bottom line.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Additionally, a clean hood system operates more efficiently, which means better temperature control in your kitchen and reduced strain on your HVAC system. This creates a more comfortable working environment during peak cooking times and can even reduce your energy costs.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Regulatory Compliance and Health Code Requirements</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Health departments and fire safety agencies have established strict regulations regarding kitchen hood cleaning and maintenance. These regulations exist for good reason—they're based on years of experience and data showing that properly maintained hood systems prevent fires and foodborne illness outbreaks.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">What Inspectors Look For</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">During health inspections, officials examine your hood system for grease accumulation, proper filter maintenance, and overall cleanliness. They verify that your hood system meets current fire codes and that you have documentation of professional cleaning services. Non-compliance can result in citations, fines, and even temporary closure of your establishment until issues are corrected.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Fire marshals conduct separate inspections focused specifically on fire safety. They assess your hood system's condition, verify that proper cleaning has been performed, and ensure that your kitchen meets all fire safety codes. These inspections are often triggered by new construction, renovations, or complaints, but they can occur at any time.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Professional hood cleaning services provide documentation and certification of completed work, which you can present during inspections. This documentation proves that you're taking your regulatory obligations seriously and maintaining your equipment properly. Having this paperwork readily available can make inspections go smoothly and helps protect you from potential violations.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Extending Equipment Life and Reducing Maintenance Costs</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Professional hood cleaning isn't just about safety and compliance—it's also a smart financial investment that extends the life of your expensive kitchen equipment. Grease buildup doesn't just accumulate on your hood; it also affects your cooking equipment, ventilation fans, and other systems throughout your kitchen.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">How Grease Affects Equipment Performance</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">When your hood system isn't functioning properly due to grease buildup, your cooking equipment must work harder to operate effectively. Griddles, fryers, and other cooking devices experience reduced efficiency and increased wear. The exhaust fan in your hood system works overtime trying to pull air through clogged filters and ductwork, leading to premature motor failure and increased energy consumption.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Over time, this additional strain on your equipment leads to more frequent breakdowns and expensive repairs. A single hood fan motor replacement can cost thousands of dollars. Regular professional cleaning prevents this deterioration by keeping your system operating at peak efficiency, reducing strain on all components, and extending the useful life of your equipment by years.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Think of professional hood cleaning as preventive maintenance for your entire kitchen ventilation system. The relatively modest cost of regular cleaning is far less than the expense of replacing major components or dealing with emergency repairs that disrupt your business operations.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Choosing the Right Professional Hood Cleaning Service</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Not all hood cleaning services are created equal. Choosing the right professional is crucial to ensuring that your hood system receives the thorough, high-quality cleaning it needs. When evaluating potential hood cleaning providers, there are several important factors to consider.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">What to Look for in a Hood Cleaning Company</h3>
+            
+            <ul class="list-disc list-inside mb-6 space-y-2">
+                <li class="text-gray-700"><strong>Proper Licensing and Certifications:</strong> Verify that the company is licensed to perform hood cleaning services and that their technicians are properly trained and certified. Licensed professionals understand current fire codes and regulations and know how to clean hood systems properly.</li>
+                <li class="text-gray-700"><strong>Insurance Coverage:</strong> Ensure the company carries liability insurance and workers' compensation coverage. This protects you in case of accidents or damage during the cleaning process.</li>
+                <li class="text-gray-700"><strong>Eco-Friendly Practices:</strong> Look for companies that use environmentally responsible cleaning products and methods. Eco-friendly solutions are safer for your staff and customers while being equally effective at removing grease and buildup.</li>
+                <li class="text-gray-700"><strong>Flexible Scheduling:</strong> Choose a company that can work around your operating hours. Ideally, they should offer early morning, late evening, or overnight cleaning services to minimize disruption to your business.</li>
+                <li class="text-gray-700"><strong>Comprehensive Documentation:</strong> The company should provide detailed reports of work completed, including photographs and certification of cleaning. This documentation is essential for regulatory compliance and insurance purposes.</li>
+                <li class="text-gray-700"><strong>Customer References:</strong> Ask for references from other restaurants or food service establishments they've served. Speaking with actual customers can provide valuable insights into the company's quality and reliability.</li>
+            </ul>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Questions to Ask Before Hiring</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Before committing to a hood cleaning service, ask detailed questions about their process, pricing, and service guarantees. Find out exactly what's included in their cleaning service, how long the cleaning typically takes, and what happens if you're not satisfied with the results. Ask about their experience with your specific type of cooking equipment and hood system configuration.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Discuss their recommended cleaning schedule based on your kitchen's cooking volume and equipment. A reputable company will provide honest recommendations rather than simply pushing the most expensive service package. They should also explain how they determine when additional services might be needed, such as ductwork cleaning or damper inspection.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Creating a Hood Cleaning Schedule That Works for Your Business</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">The frequency of professional hood cleaning depends on several factors specific to your restaurant's operations. There's no one-size-fits-all answer, but understanding the factors that influence cleaning frequency can help you develop an appropriate maintenance schedule.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Factors That Determine Cleaning Frequency</h3>
+            
+            <ul class="list-disc list-inside mb-6 space-y-2">
+                <li class="text-gray-700"><strong>Cooking Volume:</strong> High-volume restaurants with continuous cooking operations accumulate grease much faster than low-volume establishments. A busy steakhouse might need monthly cleaning, while a casual café might be fine with quarterly service.</li>
+                <li class="text-gray-700"><strong>Type of Food Service:</strong> Restaurants specializing in fried foods, grilled meats, or other high-fat cooking methods generate more grease than establishments serving primarily salads or other low-fat items.</li>
+                <li class="text-gray-700"><strong>Equipment Configuration:</strong> The size and design of your hood system affects how quickly grease accumulates. Larger systems with more surface area may accumulate grease more slowly than compact systems.</li>
+                <li class="text-gray-700"><strong>Operating Hours:</strong> Restaurants open long hours or operating seven days a week will need more frequent cleaning than establishments with limited operating hours.</li>
+                <li class="text-gray-700"><strong>Regulatory Requirements:</strong> Some jurisdictions have specific requirements for hood cleaning frequency. Check with your local health department and fire marshal for any mandated schedules.</li>
+            </ul>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Creating a Maintenance Calendar</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Work with your professional hood cleaning service to establish a maintenance calendar that meets your specific needs. Document all cleaning services in a logbook, noting the date, time, technician name, and any observations about the hood system's condition. This documentation is valuable for tracking maintenance history and proving compliance during inspections.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Set reminders well in advance of scheduled cleaning appointments to ensure you don't miss important maintenance dates. Consider scheduling cleaning during your slowest business periods to minimize operational disruption. Some restaurants prefer monthly cleaning on the same day each month for consistency and easier planning.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">The Professional Hood Cleaning Process Explained</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Understanding what happens during a professional hood cleaning can help you prepare for the service and appreciate the thoroughness of the work involved. A complete professional hood cleaning is a systematic process that addresses every component of your hood system.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Step-by-Step Cleaning Procedure</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Professional technicians begin by inspecting your entire hood system to assess the extent of grease buildup and identify any areas of concern. They'll then protect your cooking equipment and surrounding areas to prevent damage during the cleaning process. Using specialized equipment and eco-friendly degreasing solutions, they systematically clean the hood canopy, removing all accumulated grease and buildup from surfaces.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Next, they address the filters, which are often the most heavily soiled components. Depending on their condition, filters may be cleaned or replaced entirely. Professional technicians then clean the ductwork, removing grease deposits from inside the ducts to ensure proper airflow throughout the system. They inspect and clean the exhaust fan, damper, and any other components that are part of your hood system.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Throughout the process, technicians use safe disposal methods for the grease and debris removed from your system. They'll perform a final inspection to ensure all components are clean and functioning properly, and they'll provide you with documentation of the work completed, including photographs showing the before and after condition of your hood system.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Conclusion: Investing in Your Restaurant's Future</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Professional kitchen hood cleaning is not an optional luxury—it's an essential investment in your restaurant's safety, compliance, and longevity. The dangers of neglecting hood cleaning are too serious to ignore, from catastrophic fire risks to health code violations and equipment failure.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">By scheduling regular professional hood cleaning with a qualified, experienced service provider, you're protecting your employees and customers, ensuring regulatory compliance, extending the life of your equipment, and safeguarding your business investment. The cost of regular professional cleaning is minimal compared to the potential consequences of inadequate maintenance.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Don't wait for a fire scare, health department citation, or equipment failure to prompt action. Contact Greensboro Hood Cleaning today to discuss your kitchen's specific needs and establish a professional maintenance schedule that keeps your operation safe, compliant, and running smoothly. Your restaurant's future depends on the decisions you make today about maintenance and safety. Make the right choice—invest in professional hood cleaning.</p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">GH</span>
+                        </div>
+                        <span class="font-bold text-lg">Greensboro Hood Cleaning</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional hood cleaning services you can trust. Licensed, eco-friendly, and committed to your kitchen's safety.</p>
+                </div>
+                
+                <!-- Services Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Hood Cleaning</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Fire Prevention</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Maintenance Plans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Emergency Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:office@greensborohoodcleaning.com" class="text-white hover:text-[#00E5A8] transition-colors duration-300">office@greensborohoodcleaning.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-2">Follow Us</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Greensboro Hood Cleaning. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4 md:mt-0">Professional Hood Cleaning Services in Greensboro, NC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
