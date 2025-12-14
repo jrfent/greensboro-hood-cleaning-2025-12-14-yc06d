@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Hood Cleaning Team You Can Trust - Licensed Professionals, Eco-Friendly, Quick Service in Greensboro">
+    <meta name="keywords" content="hood cleaning, kitchen cleaning, fire prevention, professional cleaning">
+    <meta name="author" content="Greensboro Hood Cleaning">
+    <meta name="robots" content="index, follow">
+    <title>Greensboro Hood Cleaning - Professional Kitchen Hood Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #5B4BFF;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease-out;
+            border-radius: 8px;
+            padding: 32px;
+            background-color: white;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-item {
+            transition: all 300ms ease-out;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-4px);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 24px 0;
+        }
+        
+        .faq-item:first-child {
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            user-select: none;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+        
+        .faq-answer {
+            margin-top: 16px;
+            color: #666;
+            line-height: 1.6;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .section-heading {
+            color: #5B4BFF;
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .section-heading {
+                font-size: 2.25rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        .hero-heading {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-heading {
+                font-size: 3.75rem;
+            }
+        }
+        
+        .hero-subheading {
+            color: #666;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-subheading {
+                font-size: 1.25rem;
+            }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .accent-color {
+            color: #00E5A8;
+        }
+        
+        .bg-light-lavender {
+            background-color: #EEF0FF;
+        }
+        
+        .text-dark {
+            color: #1a1a1a;
+        }
+        
+        .text-muted {
+            color: #666;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.1) 100%);
+        }
+        
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: #EEF0FF;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .icon-box svg {
+            width: 24px;
+            height: 24px;
+            color: #5B4BFF;
+            stroke-width: 1.5;
+        }
+        
+        .star-rating {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">GH</span>
+                    </div>
+                    <span class="hidden sm:inline font-bold text-lg text-dark">Greensboro Hood Cleaning</span>
+                </a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">FAQ</a>
+            </div>
+            
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://greensborohoodcleaning.com" class="btn-primary">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-dark text-xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col space-y-4">
+                <a href="#features" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium py-2">Features</a>
+                <a href="#benefits" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium py-2">Benefits</a>
+                <a href="#about" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium py-2">About</a>
+                <a href="#testimonials" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium py-2">Testimonials</a>
+                <a href="#faq" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium py-2">FAQ</a>
+                <a href="https://greensborohoodcleaning.com" class="btn-primary w-full text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 md:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Hero Content -->
+                <div>
+                    <h1 class="hero-heading">
+                        Professional Hood Cleaning Team <span class="gradient-text">You Can Trust</span>
+                    </h1>
+                    <p class="hero-subheading text-muted mt-6">
+                        Keep your kitchen safe, clean, and compliant with professional hood cleaning services in Greensboro. Our licensed team uses eco-friendly solutions to ensure fire prevention and peace of mind.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                        <a href="https://greensborohoodcleaning.com" class="btn-primary text-center sm:text-left">
+                            Schedule Service Today
+                        </a>
+                        <button class="btn-secondary text-center sm:text-left">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-gray-200">
+                        <div>
+                            <div class="text-3xl font-bold text-[#5B4BFF]">500+</div>
+                            <div class="text-sm text-muted mt-2">Satisfied Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-[#5B4BFF]">15+</div>
+                            <div class="text-sm text-muted mt-2">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-[#5B4BFF]">24hr</div>
+                            <div class="text-sm text-muted mt-2">Quick Service</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="relative h-96 md:h-full">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl opacity-10"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full mb-8">
+                                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-lg font-semibold text-dark">Professional Kitchen Hood Cleaning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading">Why Choose Our Service</h2>
+                <p class="text-muted text-lg mt-4 max-w-2xl mx-auto">We combine expertise, reliability, and eco-friendly practices to deliver exceptional hood cleaning results every time.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Licensed Professionals -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Licensed Professionals</h3>
+                    <p class="text-muted leading-relaxed">Our team consists of fully licensed and certified hood cleaning specialists with extensive training in commercial kitchen safety standards and regulations. We maintain all necessary certifications and stay current with industry best practices to ensure your kitchen meets all fire code requirements.</p>
+                </div>
+                
+                <!-- Feature 2: Eco-Friendly Solutions -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m6.364 1.636l-.707-.707M21 12h-1m1.364 6.364l-.707-.707M12 21v1m-6.364-1.636l.707.707M3 12h1M3.636 5.636l.707.707"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Eco-Friendly Solutions</h3>
+                    <p class="text-muted leading-relaxed">We utilize environmentally responsible cleaning products and methods that are safe for your staff, customers, and the planet. Our green cleaning approach effectively removes grease and buildup without harsh chemicals, reducing environmental impact while maintaining the highest cleanliness standards.</p>
+                </div>
+                
+                <!-- Feature 3: Quick Service -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Quick Service</h3>
+                    <p class="text-muted leading-relaxed">We understand that time is money in the restaurant business. Our efficient team completes hood cleaning projects quickly without compromising quality. Available for 24-hour emergency service and flexible scheduling to minimize disruption to your kitchen operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-light-lavender">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading">Key Benefits for Your Business</h2>
+                <p class="text-muted text-lg mt-4 max-w-2xl mx-auto">Protect your investment and ensure operational excellence with professional hood cleaning services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Benefit 1: Safe Kitchen -->
+                <div class="benefit-item">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8]">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark mb-2">Safe Kitchen Environment</h3>
+                            <p class="text-muted leading-relaxed">A clean hood system ensures proper ventilation and reduces the risk of harmful airborne contaminants. Your staff works in a safer, healthier environment with improved air quality and reduced exposure to grease particles and cooking fumes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2: Fire Prevention -->
+                <div class="benefit-item">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8]">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m-6 4v2m12-6v2m0 0V7a2 2 0 10-4 0m0 0V5a2 2 0 10-4 0m0 0V3m0 6h.01"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark mb-2">Fire Prevention & Safety</h3>
+                            <p class="text-muted leading-relaxed">Grease buildup is a leading cause of kitchen fires. Regular professional cleaning removes dangerous grease accumulation, significantly reducing fire risk. Stay compliant with fire codes and insurance requirements while protecting your business assets and employees.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3: Peace of Mind -->
+                <div class="benefit-item">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8]">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark mb-2">Complete Peace of Mind</h3>
+                            <p class="text-muted leading-relaxed">Know that your kitchen hood system is professionally maintained and fully compliant with all health and safety regulations. Our detailed documentation and certification provide proof of maintenance for inspections, insurance claims, and peace of mind knowing your business is protected.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- About Content -->
+                <div>
+                    <h2 class="section-heading mb-8">About Greensboro Hood Cleaning</h2>
+                    
+                    <p class="text-muted text-lg leading-relaxed mb-6">
+                        Founded in 2009, Greensboro Hood Cleaning has been serving the Greensboro community and surrounding areas with professional, reliable hood cleaning services for over 15 years. What started as a small family operation has grown into a trusted partner for hundreds of restaurants, commercial kitchens, and food service establishments. Our commitment to excellence and customer satisfaction has made us the preferred choice for businesses that demand the highest standards of cleanliness and safety.
+                    </p>
+                    
+                    <p class="text-muted text-lg leading-relaxed">
+                        We believe that every business deserves professional hood cleaning services that prioritize safety, compliance, and environmental responsibility. Our mission is to help restaurant owners and managers maintain clean, safe kitchens while reducing operational risks and ensuring regulatory compliance. We're dedicated to building long-term relationships with our clients through consistent quality, transparent communication, and exceptional customer service. Every member of our team shares a passion for delivering outstanding results and earning the trust of the businesses we serve.
+                    </p>
+                </div>
+                
+                <!-- About Visual -->
+                <div class="relative h-96 md:h-full">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#5B4BFF] via-[#00E5A8] to-[#5B4BFF] rounded-2xl opacity-20"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full mb-8">
+                                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-lg font-semibold text-dark">Trusted Since 2009</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-light-lavender">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading">What Our Clients Say</h2>
+                <p class="text-muted text-lg mt-4 max-w-2xl mx-auto">Hear from satisfied restaurant owners and kitchen managers about their experience with our professional hood cleaning services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-muted leading-relaxed mb-6">"Greensboro Hood Cleaning has been an absolute game-changer for our restaurant. Their team is professional, punctual, and thorough. Our hood system has never looked better, and we feel confident that our kitchen meets all fire safety codes."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-dark">Marcus Johnson</p>
+                        <p class="text-sm text-muted">Owner, Riverside Bistro</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-muted leading-relaxed mb-6">"I was impressed with how quickly they completed the job without disrupting our lunch service. The attention to detail is outstanding, and they even provided us with a comprehensive report of the work completed."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-dark">Sarah Chen</p>
+                        <p class="text-sm text-muted">Kitchen Manager, Golden Dragon Restaurant</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-muted leading-relaxed mb-6">"Best investment we've made for our kitchen! The eco-friendly cleaning products are perfect for our sustainable restaurant concept, and our insurance inspector was very impressed with the documentation."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-dark">David Rodriguez</p>
+                        <p class="text-sm text-muted">Owner, Farm to Table Café</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 star-rating" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-muted leading-relaxed mb-6">"Reliable, professional, and trustworthy. They've been maintaining our hood system for three years now, and we wouldn't use anyone else. Their customer service is exceptional."</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-semibold text-dark">Emily Thompson</p>
+                        <p class="text-sm text-muted">General Manager, Premier Pizza Co.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <p class="text-muted text-lg mt-4">Get answers to common questions about our hood cleaning services and process.</p>
+            </div>
+            
+            <div class="space-y-0">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How often should my kitchen hood be professionally cleaned?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>The frequency of professional hood cleaning depends on your cooking volume and type of food preparation. High-volume restaurants with heavy grease production should have their hoods cleaned monthly, while moderate-use kitchens may only need quarterly cleaning. Low-volume operations might require semi-annual cleaning. We recommend consulting with your insurance provider and local health department, as they may have specific requirements. Our team can assess your kitchen and recommend an optimal cleaning schedule tailored to your specific needs.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is included in your hood cleaning service?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Our comprehensive hood cleaning service includes thorough cleaning of the hood canopy, filters, ductwork, and exhaust system. We remove all grease buildup, degreasing agents, and contaminants using our eco-friendly cleaning solutions. The service includes inspection of all components for damage or wear, replacement of disposable filters if needed, and detailed documentation of the work completed. We also provide a certification of completion for compliance and insurance purposes. Our team ensures everything is properly reassembled and functioning optimally before we leave your kitchen.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you work around my restaurant's operating hours?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Absolutely! We understand that your restaurant's operations are critical to your business. We offer flexible scheduling including early morning, late evening, and overnight cleaning services to minimize disruption to your kitchen operations. We can work before you open, after you close, or even during slow periods if that works best for your schedule. We also offer emergency 24-hour service for urgent situations. Simply contact us to discuss your preferred timing, and we'll do our best to accommodate your needs while ensuring thorough, professional service.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your cleaning products safe for food preparation areas?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Yes, safety is our top priority. We exclusively use eco-friendly, food-safe cleaning products that are approved for use in commercial kitchens. Our cleaning solutions effectively remove grease and buildup without harsh chemicals that could contaminate food preparation surfaces. All products are non-toxic and environmentally responsible, protecting your staff, customers, and the environment. We follow all health and safety regulations and best practices for food service establishments. After cleaning, we thoroughly rinse and sanitize all surfaces to ensure they're ready for food preparation.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What documentation do you provide for insurance and compliance purposes?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>We provide comprehensive documentation for every service including a detailed cleaning report, certification of completion, and photographic evidence of work completed. This documentation is essential for insurance claims, health inspections, and fire code compliance verification. We maintain records of all services performed on your system, creating a complete maintenance history for your kitchen. Our certifications are recognized by insurance companies and health departments, helping you meet all regulatory requirements. We can also provide recommendations for future maintenance based on the condition of your hood system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-cover bg-center relative" style="background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Protect Your Kitchen?</h2>
+            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">Schedule your professional hood cleaning today and enjoy a safe, clean kitchen with complete peace of mind.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://greensborohoodcleaning.com" class="btn-primary">
+                    Schedule Now
+                </a>
+                <a href="mailto:office@greensborohoodcleaning.com" class="btn-secondary bg-white text-[#5B4BFF] border-white hover:bg-gray-100">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">GH</span>
+                        </div>
+                        <span class="font-bold text-lg">Greensboro Hood Cleaning</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional hood cleaning services you can trust. Licensed, eco-friendly, and committed to your kitchen's safety.</p>
+                </div>
+                
+                <!-- Services Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Hood Cleaning</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Fire Prevention</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Maintenance Plans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Emergency Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:office@greensborohoodcleaning.com" class="text-white hover:text-[#00E5A8] transition-colors duration-300">office@greensborohoodcleaning.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-2">Follow Us</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Greensboro Hood Cleaning. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4 md:mt-0">Professional Hood Cleaning Services in Greensboro, NC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
