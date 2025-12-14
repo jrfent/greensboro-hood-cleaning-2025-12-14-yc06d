@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Hood Cleaning Team You Can Trust - Licensed Professionals, Eco-Friendly, Quick Service in Greensboro">
+    <meta name="keywords" content="hood cleaning, kitchen cleaning, fire prevention, professional cleaning">
+    <meta name="author" content="Greensboro Hood Cleaning">
+    <meta name="robots" content="index, follow">
+    <title>Blog - Greensboro Hood Cleaning - Professional Kitchen Hood Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #5B4BFF;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(91, 75, 255, 0.3);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease-out;
+            border-radius: 8px;
+            padding: 32px;
+            background-color: white;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-item {
+            transition: all 300ms ease-out;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-4px);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 24px 0;
+        }
+        
+        .faq-item:first-child {
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            user-select: none;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+        
+        .faq-answer {
+            margin-top: 16px;
+            color: #666;
+            line-height: 1.6;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .section-heading {
+            color: #5B4BFF;
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .section-heading {
+                font-size: 2.25rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        .hero-heading {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-heading {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-heading {
+                font-size: 3.75rem;
+            }
+        }
+        
+        .hero-subheading {
+            color: #666;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-subheading {
+                font-size: 1.25rem;
+            }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .accent-color {
+            color: #00E5A8;
+        }
+        
+        .bg-light-lavender {
+            background-color: #EEF0FF;
+        }
+        
+        .text-dark {
+            color: #1a1a1a;
+        }
+        
+        .text-muted {
+            color: #666;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.1) 100%);
+        }
+        
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: #EEF0FF;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .icon-box svg {
+            width: 24px;
+            height: 24px;
+            color: #5B4BFF;
+            stroke-width: 1.5;
+        }
+        
+        .star-rating {
+            color: #FFD700;
+        }
+
+        .blog-card {
+            transition: all 300ms ease-out;
+            border-radius: 8px;
+            padding: 32px;
+            background-color: white;
+            border: 1px solid #f0f0f0;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-blog-card {
+            transition: all 300ms ease-out;
+            border-radius: 8px;
+            padding: 40px;
+            background-color: white;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-blog-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-date {
+            display: inline-block;
+            background-color: #EEF0FF;
+            color: #5B4BFF;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .blog-title {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">GH</span>
+                    </div>
+                    <span class="hidden sm:inline font-bold text-lg text-dark">Greensboro Hood Cleaning</span>
+                </a>
+            </div>
+            
+            <!-- Back Link -->
+            <a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d" class="text-dark hover:text-[#5B4BFF] transition-colors duration-300 font-medium">
+                ← Back
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="hero-gradient py-16 md:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="hero-heading">
+                    Our <span class="gradient-text">Blog</span>
+                </h1>
+                <p class="hero-subheading text-muted mt-6 max-w-3xl mx-auto">
+                    Discover insights, tips, and best practices for maintaining a safe, clean, and compliant commercial kitchen. Our blog covers everything from fire prevention and hood cleaning techniques to industry regulations and cost-saving strategies for restaurant owners and kitchen managers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card text-center">
+                    <div class="icon-box mx-auto">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17.25c0 5.105 3.07 9.408 7.5 11.398m0-13c5.5 0 10 4.745 10 11.007 0 5.368-3.612 9.857-8.5 11.615"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Expert Knowledge</h3>
+                    <p class="text-muted leading-relaxed">Learn from industry experts with over 15 years of experience in professional kitchen hood cleaning and maintenance.</p>
+                </div>
+
+                <div class="feature-card text-center">
+                    <div class="icon-box mx-auto">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Safety & Compliance</h3>
+                    <p class="text-muted leading-relaxed">Stay informed about fire codes, health regulations, and best practices to keep your kitchen safe and compliant.</p>
+                </div>
+
+                <div class="feature-card text-center">
+                    <div class="icon-box mx-auto">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Cost Savings</h3>
+                    <p class="text-muted leading-relaxed">Discover how proper maintenance extends equipment lifespan and reduces operational costs for your restaurant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-16 md:py-24 bg-light-lavender">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="featured-blog-card">
+                <div class="blog-date">December 14, 2025</div>
+                <h2 class="blog-title">The Complete Guide to Professional Kitchen Hood Cleaning: Why It Matters for Your Restaurant</h2>
+                <p class="blog-excerpt">
+                    Kitchen hood cleaning is critical for restaurant safety and operations. Grease buildup in hood systems creates severe fire hazards—a leading cause of restaurant fires that spread rapidly through ventilation systems. Beyond fire prevention, professional cleaning protects employee health by improving air quality, ensures regulatory compliance with health codes and fire safety standards, and extends equipment lifespan while reducing maintenance costs. Choosing licensed, insured professionals with eco-friendly practices is essential. Cleaning frequency depends on cooking volume and food type, typically ranging from monthly to quarterly service. Regular professional maintenance protects your investment, staff, customers, and business longevity.
+                </p>
+                <a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d/blog/the-complete-guide-to-professional-kitchen-hood-cl.html" class="btn-primary">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Blog Posts Placeholder -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading">More Articles Coming Soon</h2>
+                <p class="text-muted text-lg mt-4 max-w-2xl mx-auto">We're regularly adding new content covering hood cleaning best practices, fire safety, kitchen maintenance, and industry insights.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Card 1 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">Understanding Fire Code Compliance for Commercial Kitchens</h3>
+                    <p class="blog-excerpt">Explore the essential fire safety codes and regulations that govern commercial kitchen hood systems and how to maintain compliance.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 2 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">Eco-Friendly Cleaning Solutions for Modern Kitchens</h3>
+                    <p class="blog-excerpt">Discover sustainable and environmentally responsible cleaning methods that don't compromise on effectiveness or safety.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 3 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">How Often Should You Clean Your Kitchen Hood?</h3>
+                    <p class="blog-excerpt">Learn the recommended cleaning schedules based on your restaurant type, cooking volume, and industry best practices.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 4 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">The Hidden Costs of Neglected Hood Maintenance</h3>
+                    <p class="blog-excerpt">Understand the financial and safety implications of delaying professional hood cleaning and maintenance services.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 5 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">Employee Health and Air Quality in Commercial Kitchens</h3>
+                    <p class="blog-excerpt">Explore how proper hood cleaning improves air quality and protects the health and safety of your kitchen staff.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 6 -->
+                <div class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3 class="blog-title text-xl">Choosing the Right Hood Cleaning Service Provider</h3>
+                    <p class="blog-excerpt">Learn what to look for when selecting a professional hood cleaning company for your restaurant or food service operation.</p>
+                    <div class="opacity-50 cursor-not-allowed">
+                        <button class="btn-primary opacity-50 cursor-not-allowed">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-cover bg-center relative" style="background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Protect Your Kitchen?</h2>
+            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">Schedule your professional hood cleaning today and enjoy a safe, clean kitchen with complete peace of mind.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://greensborohoodcleaning.com" class="btn-primary">
+                    Schedule Now
+                </a>
+                <a href="mailto:office@greensborohoodcleaning.com" class="btn-secondary bg-white text-[#5B4BFF] border-white hover:bg-gray-100">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">GH</span>
+                        </div>
+                        <span class="font-bold text-lg">Greensboro Hood Cleaning</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional hood cleaning services you can trust. Licensed, eco-friendly, and committed to your kitchen's safety.</p>
+                </div>
+                
+                <!-- Services Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d#features" class="text-gray-400 hover:text-white transition-colors duration-300">Hood Cleaning</a></li>
+                        <li><a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Fire Prevention</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Maintenance Plans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Emergency Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://jrfent.github.io/greensboro-hood-cleaning-2025-12-14-yc06d#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:office@greensborohoodcleaning.com" class="text-white hover:text-[#00E5A8] transition-colors duration-300">office@greensborohoodcleaning.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-2">Follow Us</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#00E5A8] transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Greensboro Hood Cleaning. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4 md:mt-0">Professional Hood Cleaning Services in Greensboro, NC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
